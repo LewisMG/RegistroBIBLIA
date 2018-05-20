@@ -6,14 +6,21 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using RegistroBiblia.UI.Registros;
 
 namespace RegistroBiblia
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void libroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistrarLibro view = new RegistrarLibro();
+            view.Show();
         }
     }
 }
